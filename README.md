@@ -40,6 +40,11 @@ This project applies **ARIMA** (AutoRegressive Integrated Moving Average) and **
 - Estimated volatility levels and their impact on risk assessment.
 - Key takeaways from model performance and limitations.
 
+<details>
+  <summary>📊 ARIMA Forecast</summary>
+  <img src="fig/arima_forecast_tsla.png" width="600">
+</details>
+
 ## 🔧 Installation & Dependencies
 To run this project, install the necessary Python libraries:
 ```bash
