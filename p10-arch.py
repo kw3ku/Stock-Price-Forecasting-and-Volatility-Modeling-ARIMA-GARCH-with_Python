@@ -2,6 +2,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 from statsmodels.tsa.arima.model import ARIMA
 from datetime import datetime
+import sys
 
 # Function to parse dates
 def parser(x):
@@ -33,6 +34,11 @@ def arima_forecast(stock_symbol):
     model = ARIMA(train, order=(5,1,0))
     model_fit = model.fit()
     print(model_fit.summary())
+
+    with open(f'p1/fig/arima_summary_{stock_symbol}.txt', 'w') as f:
+        sys.stdout = f
+        print(model_fit.summary())
+        sys.stdout = sys.__stdout__
 
     # Make predictions for the test set
     predictions = model_fit.forecast(steps=len(test))

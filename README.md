@@ -5,6 +5,17 @@ This project uses Python to apply **ARIMA** (AutoRegressive Integrated Moving Av
 
 <img src="fig/arima_forecast_tsla.png" width="600">
 
+## ARIMA Model Summary
+
+- **Model:** ARIMA(5,1,0)
+- **Observations:** 1152
+- **AIC:** 2115.200
+- **BIC:** 2145.491
+- **Significant Lags:** L3 (p = 0.001), L5 (p = 0.014)
+
+Full results available in [`results/arima_summary_TSLA.txt`](arima_summary_TSLA.txt).
+
+
 ## 📊 Data Description
 - **Dataset**: Historical stock price data from Yahoo Finance (or other sources).
 - **Key Variables**:
