@@ -3,6 +3,8 @@
 ## 📌 Project Overview
 This project applies **ARIMA** (AutoRegressive Integrated Moving Average) and **GARCH** (Generalized Autoregressive Conditional Heteroskedasticity) models to forecast stock prices and analyze market volatility. These models are widely used in financial time series forecasting to predict price movements and quantify risk.
 
+<img src="fig/arima_forecast_tsla.png" width="600">
+
 ## 📊 Data Description
 - **Dataset**: Historical stock price data from Yahoo Finance (or other sources).
 - **Key Variables**:
