@@ -8,7 +8,7 @@ def parser(x):
     return datetime.strptime(x, '%Y-%m-%d')
 
 # Load the data
-series = pd.read_csv('data/stocks_data.csv', header=[0,1], index_col=0, parse_dates=True)
+series = pd.read_csv('p1/data/stocks_data.csv', header=[0,1], index_col=0, parse_dates=True)
 series = series.squeeze()
 
 # List of stock symbols
@@ -48,7 +48,7 @@ def arima_forecast(stock_symbol):
     plt.plot(predictions, color='red', label='Predicted Data')
     plt.legend()
     plt.title(f'ARIMA Forecast for {stock_symbol}')
-    plt.savefig(f'fig/arima_forecast_{stock_symbol}.png')
+    plt.savefig(f'p1/fig/arima_forecast_{stock_symbol}.png')
     plt.show()
 
   
